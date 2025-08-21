@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natya Sowparnika | UI/UX Designer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="UI/UX Designer">
+    <meta name="author" content="Natya Sowparnika">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Natya Sowparnika | UI/UX Designer">
+    <meta property="og:description" content="UI/UX Designer">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/">
+    <meta property="twitter:title" content="Natya Sowparnika| UI/UX Designer">
+    <meta property="twitter:description" content="UI/UX Designer">
+    <meta property="twitter:image" content="https://example.com/og-image.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'bg-dark': '#001219',
+              'surface-dark': 'rgba(10, 147, 150, 0.1)', // #0a9396 with alpha
+              'text-dark': '#e9d8a6',
+              'muted-dark': '#94d2bd',
+              'bg-light': '#f7f9f9',
+              'surface-light': '#ffffff',
+              'text-light': '#001219',
+              'muted-light': '#005f73',
+              'accent': '#0a9396',
+              'accent-2': '#ee9b00',
+              'accent-3': '#ca6702',
+              'accent-4': '#bb3e03',
+              'accent-5': '#ae2012',
+              'accent-6': '#9b2226',
+            },
+            fontFamily: {
+              display: ['Poppins', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              scaleIn: {
+                '0%': { transform: 'scale(0.95)' },
+                '100%': { transform: 'scale(1)' },
+              },
+              cardIn3D: {
+                '0%': { opacity: '0', transform: 'translateY(40px) rotateX(-20deg) scale(0.9)' },
+                '100%': { opacity: '1', transform: 'translateY(0) rotateX(0deg) scale(1)' },
+              },
+              heroTextReveal: {
+                '0%': { opacity: '0', transform: 'translateY(100%) skewY(10deg)' },
+                '100%': { opacity: '1', transform: 'translateY(0) skewY(0deg)' },
+              },
+              creativeEnter: {
+                '0%': { opacity: '0', transform: 'translateY(50px) scale(0.9) skewY(3deg)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1) skewY(0deg)' },
+              },
+              drawPath: {
+                '0%': { strokeDashoffset: '1' },
+                '100%': { strokeDashoffset: '0' },
+              },
+              pulse: {
+                '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                '50%': { transform: 'scale(1.1)', opacity: '0.7' },
+              },
+            },
+            animation: {
+              fadeInUp: 'fadeInUp 0.5s ease-out forwards',
+              scaleIn: 'scaleIn 0.3s ease-out forwards',
+              cardIn: 'cardIn3D 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+              heroText: 'heroTextReveal 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+              creativeEnter: 'creativeEnter 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+              drawPath: 'drawPath 5s ease-in-out infinite alternate',
+              pulse: 'pulse 3s ease-in-out infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style type="text/css">
+      /* Animated noise background */
+      body::before {
+        content: '';
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200vw;
+        height: 200vh;
+        background: transparent url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjaW5vaXNlKSIvPjwvc3ZnPg==') repeat;
+        animation: noiseAnim 2s infinite linear;
+        opacity: 0.03;
+        z-index: -2;
+        pointer-events: none;
+      }
+      @keyframes noiseAnim {
+          0% { transform: translate(0, 0); }
+          25% { transform: translate(-5%, 5%); }
+          50% { transform: translate(5%, -5%); }
+          75% { transform: translate(-5%, 5%); }
+          100% { transform: translate(0, 0); }
+      }
+      .ai-wires path {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: drawPath 6s ease-in-out infinite alternate;
+      }
+    </style>
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Natya Sowparnika",
+      "url": "https://example.com",
+      "jobTitle": "UI/UX Designer",
+      "sameAs": [
+        "[SOCIAL_LINKEDIN]",
+        "[SOCIAL_BEHANCE]"
+      ]
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-bg-light dark:bg-bg-dark font-body text-text-light dark:text-text-dark antialiased transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
